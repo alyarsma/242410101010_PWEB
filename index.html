@@ -3,97 +3,410 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Sistem Manajemen Rental Baju Cosplay Nekoya"
-    />
-    <title>Nekoya - Rental Baju Cosplay</title>
+    <title>Nekoya - Rental Cosplay</title>
+    <link rel="icon" href="nekoya soft blue.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <header>
-      <img src="Logo Nekoya Jepang (1).png" alt="Logo Nekoya" width="120" />
-      <h1>Nekoya</h1>
-      <p>Sistem Manajemen Rental Baju Cosplay</p>
+  <body class="beranda">
+    <!-- TOPBAR -->
+
+      <div class="topbar">
+        
+        <button class="menu-toggle">☰</button>
+        
+        <img src="nekoya soft blue.png" alt="Logo" />
+        <h2>NEKOYA</h2>
+
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="JadwalEvent.html">Jadwal Event</a></li>
+            <li><a href="InputKostum.html">Input Kostum</a></li>
+            <li><a href="KatalogKostum.html">Katalog Kostum</a></li>
+            <li><a href="dataKostum.html" >Data Kostum</a></li>
+
+            <li><a href="#" class="login-btn">Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="/Beranda.html">Beranda</a></li>
-        <li><a href="/JadwalEvent.html">JadwalEvent</a></li>
-        <li><a href="/InputKostum.html">Input Kostum</a></li>
-        <li><a href="/KatalogKostum.html">Katalog Kostum</a></li>
-        <li><a href="#">Kontak</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section>
-        <h2>Informasi Nekoya</h2>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="slides">
+          <!-- SLIDE 1 -->
+          <div class="slide active">
+            <div class="hero-text">
+              <h2>NEKOYA</h2>
+              <p>Sewa kostum cosplay terbaik untuk event kamu</p>
+            </div>
+            <img src="himel.png" class="hero-img" />
+          </div>
 
-        <article>
-          <header>
-            <h3>Tentang Nekoya</h3>
-          </header>
+          <!-- SLIDE 2 -->
+          <div class="slide">
+            <div class="hero-text">
+              <h2>Koleksi Terlengkap</h2>
+              <p>Dari anime hingga game favoritmu</p>
+            </div>
+            <img src="ganyu.jpg" class="hero-img" />
+          </div>
 
-          <p>
-            Nekoya adalah layanan rental baju cosplay yang menyediakan berbagai
-            kostum karakter anime, game, dan budaya Jepang. Sistem ini digunakan
-            untuk membantu mengelola data kostum serta memantau stok yang
-            tersedia.
-          </p>
+          <!-- SLIDE 3 -->
+          <div class="slide">
+            <div class="hero-text">
+              <h2>Siap Event</h2>
+              <p>Tampil maksimal di setiap event cosplay</p>
+            </div>
+            <img src="mitsuri.jpg" class="hero-img" />
+          </div>
+        </div>
 
-          <footer>
-            <p>Dikelola oleh Tim Nekoya</p>
-          </footer>
-        </article>
+        <!-- tombol -->
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
 
-        <article>
-          <header>
-            <h3>Koleksi Kostum Terbaru</h3>
-          </header>
+        <!-- dots -->
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
 
-          <p>
-            Koleksi terbaru kami meliputi kimono tradisional, kostum ninja, maid
-            café, serta berbagai karakter anime populer.
-          </p>
-        </article>
+        <!-- efek bunga tetap boleh -->
+        <div class="leaf" style="left: 20%; animation-duration: 6s"></div>
+        <div class="leaf" style="left: 40%; animation-duration: 8s"></div>
+        <div class="leaf" style="left: 60%; animation-duration: 7s"></div>
+        <div class="leaf" style="left: 80%; animation-duration: 9s"></div>
       </section>
 
-      <section>
-        <h2>Statistik Rental</h2>
+      <section class="katalog-content">
+        <div class="produk-header">
+          <h3>TRENDING</h3>
+          <a href="#">Selengkapnya ></a>
+        </div>
 
-        <p>Ketersediaan Kostum</p>
-        <progress value="12" max="15">12</progress>
+        <div class="trending-list">
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="Mitsuri Kanroji.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Mitsuri Kanroji</h3>
+              <p class="price">Rp 110.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Wanita</span>
+              </div>
+              <p class="location">📍 Bandung</p>
+            </div>
+          </article>
 
-        <p>Popularitas Kostum</p>
-        <meter value="80" min="0" max="100">80%</meter>
+          <!-- ANYA -->
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="anya forger.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Anya Forger</h3>
+              <p class="price">Rp 90.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">L</span>
+                <span class="gender">Wanita</span>
+              </div>
+              <p class="location">📍 Jakarta</p>
+            </div>
+          </article>
+
+          <!-- WILLIAM -->
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="William.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>William Moriarty</h3>
+              <p class="price">Rp 70.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">S</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Surabaya</p>
+            </div>
+          </article>
+
+          <!-- HIMMEL -->
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="Himel2.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Himmel</h3>
+              <p class="price">Rp 100.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Bali</p>
+            </div>
+          </article>
+
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="mikazuki arion.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Mikazuki Arion</h3>
+              <p class="price">Rp 100.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Bali</p>
+            </div>
+          </article>
+
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="Himel2.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Himmel</h3>
+              <p class="price">Rp 100.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Bali</p>
+            </div>
+          </article>
+        </div>
       </section>
-    </main>
 
-    <aside>
-      <h3>Informasi Tambahan</h3>
+      <section class="katalog-content">
+        <div class="produk-header">
+          <h3>KATALOG TERBARU</h3>
+          <a href="#">Selengkapnya ></a>
+        </div>
 
-      <ul>
-        <li>Total Kostum: 15</li>
-        <li>Kostum Disewa: 3</li>
-        <li>Kostum Tersedia: 12</li>
-      </ul>
+        <div class="trending-list">
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="Mitsuri Kanroji.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Mitsuri Kanroji</h3>
+              <p class="price">Rp 110.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Wanita</span>
+              </div>
+              <p class="location">📍 Bandung</p>
+            </div>
+          </article>
 
-      <details>
-        <summary>Kontak Nekoya</summary>
-        <p>Email: info@nekoya.com</p>
-        <p>Instagram: @nekoya.cosplay</p>
-      </details>
-    </aside>
+          <!-- ANYA -->
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="anya forger.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Anya Forger</h3>
+              <p class="price">Rp 90.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">L</span>
+                <span class="gender">Wanita</span>
+              </div>
+              <p class="location">📍 Jakarta</p>
+            </div>
+          </article>
 
-    <footer>
-      <p>&copy; 2026 Nekoya Rental Cosplay</p>
+          <!-- WILLIAM -->
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="William.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>William Moriarty</h3>
+              <p class="price">Rp 70.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">S</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Surabaya</p>
+            </div>
+          </article>
 
-      <nav>
-        <a href="#">Tentang Kami</a> |
-        <a href="#">Kontak</a>
-      </nav>
+          <!-- HIMMEL -->
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="Himel2.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Himmel</h3>
+              <p class="price">Rp 100.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Bali</p>
+            </div>
+          </article>
+
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="mikazuki arion.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Mikazuki Arion</h3>
+              <p class="price">Rp 100.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Bali</p>
+            </div>
+          </article>
+
+          <article class="card-pro">
+            <div class="img-wrap">
+              <img src="Himel2.jpg" />
+            </div>
+            <div class="card-body">
+              <div class="store">
+                <img src="nekoya soft blue.png" alt="logo" />
+                <div>
+                  <p class="store-name">Yuka cosrent</p>
+                  <p class="store-username">@yuka.cosrent</p>
+                </div>
+              </div>
+              <h3>Himmel</h3>
+              <p class="price">Rp 100.000 / 3 hari</p>
+              <div class="badge">
+                <span class="size">M</span>
+                <span class="gender">Pria</span>
+              </div>
+              <p class="location">📍 Bali</p>
+            </div>
+          </article>
+        </div>
+      </section>
+</main> 
+    <!-- 🔥 FOOTER KEREN -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-col besar">
+          <h4>Nekoya</h4>
+          <p>
+            Nekoya adalah platform rental kostum anime yang membantu kamu tampil maksimal di setiap event cosplay.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <a href="#">Beranda</a>
+          <a href="#">Katalog Kostum</a>
+          <a href="#">Jadwal Event</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kategori</h4>
+          <a href="#">Anime</a>
+          <a href="#">Game</a>
+          <a href="#">VTuber</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bantuan</h4>
+          <a href="#">Kontak</a>
+          <a href="#">FAQ</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nekoya Rental Cosplay</p>
+      </div>
     </footer>
+
   </body>
 </html>
